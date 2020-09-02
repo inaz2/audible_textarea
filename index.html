@@ -40,8 +40,8 @@ function onKeyDown(event) {
     
 function onKeyUp(event) {
     let text = document.getElementById('textarea').value;
-    document.getElementById("linecount").textContent = text.split('\n').length;
     document.getElementById("charcount").textContent = text.length;
+    document.getElementById("linecount").textContent = (text.length > 0) ? text.split('\n').length : 0;
 }
 </script>
 </body>
