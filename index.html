@@ -27,13 +27,13 @@ const sounds = {
 function onKeyDown(event) {
     switch (event.code) {
         case "Enter":
-            sounds['MsgBell'].cloneNode().play();
+            sounds['MsgBell'].cloneNode(false).play();
             break;
         case "Backspace":
-            sounds['MsgBack'].cloneNode().play();
+            sounds['MsgBack'].cloneNode(false).play();
             break;
         default:
-            sounds['MsgType'].cloneNode().play();
+            sounds['MsgType'].cloneNode(false).play();
             break;
     }
 }
