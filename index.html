@@ -27,7 +27,7 @@ const sounds = {
 };
 
 function onKeyDown(event) {
-    switch (event.code) {
+    switch (event.key) {
         case "Control":
             sounds['System'].cloneNode(false).play();
             break;
